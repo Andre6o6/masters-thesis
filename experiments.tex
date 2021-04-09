@@ -1,0 +1,49 @@
+%Для того, чтобы проверить, насколько реализованное решение соответствует требованиям, а также для того, чтобы среди аналогичных вариантов реализации алгоритма распознавания P300 выбрать тот, который дает наилучший результат на реальных данных, потребовалось произвести ряд экспериментов.
+
+\subsection{Условия эксперимента}
+Эксперименты проводились на сервисе облачных вычислений Google Colab.
+
+Входные данные, на которых проверяется подход:
+\begin{itemize}
+\item Датасет CelebA-HQ
+\item Датасет FEI Face Database
+\end{itemize}
+
+
+\subsection{Метрики}
+%Как мы сравниваем, что результаты двух подходов лучше или хуже
+\begin{itemize}
+    \item LPIPS \cite{zhang2018lpips}
+    \item Face Identity score \cite{deng2018arcface}
+    \item FID \cite{heusel2017fid}
+    \item Attribute score
+\end{itemize}
+% FID score:To measure the diversity and quality of the output samples, we use the FID score between the test images and the edited images. We evaluate the results with 1k generated samples from the StyleGAN2 framework
+% Face identity score:To measure the quality of the edit and quantify the identity preservation of the edits,  we evaluate the edited images using a face identity score.  We take a state-of-the-art classifier model for face recognition (Geitgey 2020) to output embeddings of the images. Given a pair of images, before and after edits, we calculate the Euclidean distance and the cosine similarity between the embeddings. Note that we use a different classifier from the attribute estimator used in training our StyleFlow. We choose three major edits for this purpose: light, pose, and expression.
+
+\subsection{Исследовательские вопросы}
+%Надо сформулировать то, чего мы хотели бы добиться работой (2 штуки будет хорошо):
+\begin{itemize}
+\item Оценка качества реконструкции реальных изображений
+\item Оценка качества переноса лицевых признаков
+%\item Хотим алгоритм, который лучше вот таких-то остальных
+%\item Если в подходе можно включать/выключать составляющие, то насколько %существенно каждая составляющая влияет на улучшения
+%\item Если у нас строится приближение каких-то штук, то на сколько точными %будут эти приближения
+%\item и т.п.
+\end{itemize}
+
+% Первым исстедуемым вопросом являетс вопрос выбора (базовой)генеративной состязательной сети, которая будет (в основу) решения. [Сказать/повторить требования] Важно качество реконструкции реального изображения
+% ХЗ, на самом деле это можно объяснить и без эксперимента, он будет только мешаться.
+
+\subsection{Результаты}
+Здесь будут таблицы и графики
+
+%Пояснения по Research Questions.
+%\subsubsection{RQ1} Пояснения
+%\subsubsection{RQ2} Пояснения
+
+%\subsection{Обсуждение результатов}
+%Чуть более неформальное обсуждение, то, что сделано. Например, почему метод работает лучше остальных? Или, что делать со случаями, когда метод классифицирует вход некорректно.
+
+%\section{Угрозы нарушения корректности (опциональный)}
+%Если основная заслуга метода, это то, что он дает лучшие цифры, то стоит сказать, где мы могли облажаться, когда проводили численные замеры. 
