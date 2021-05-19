@@ -205,9 +205,8 @@
         Консультант:\\
         \my@title@consultantPosition@ru\ \my@title@consultant@ru\\
         \vskip 1em
-        %TODO Вставить когда я узнаю точно данные рецензента
-        %Рецензент:\\
-        %\my@title@reviewerPosition@ru\ \my@title@reviewer@ru\\
+        Рецензент:\\
+        \my@title@reviewerPosition@ru\ \my@title@reviewer@ru\\
     }
     
 \end{center}
@@ -262,9 +261,8 @@
             Consultant:\\
             \my@title@consultantPosition@en\ \my@title@consultant@en\\
             \vskip 1em
-            %TODO Вставить когда я узнаю точно данные рецензента
-            %Reviewer:\\
-            %\my@title@reviewerPosition@en\ \my@title@reviewer@en\\
+            Reviewer:\\
+            \my@title@reviewerPosition@en\ \my@title@reviewer@en\\
         }
         
     \end{center}
