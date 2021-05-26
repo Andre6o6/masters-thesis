@@ -192,7 +192,7 @@
     %\vskip 1em
     %Основная образовательная программа \textit{\my@title@programme@ru}
     %\vskip 1em
-    {\large Выпускная магистерская работа}
+    {\large Выпускная квалификационная работа}
     \vskip 1em
     
     \ifthenelse{\equal{\my@title@profile@ru}{}}{}{Профиль \underline{\textit{\my@title@profile@ru}}}
@@ -220,7 +220,8 @@
     \renewcommand{\headrulewidth}{0pt}  % remove head ruler
     %% В верхнем колонтитуле будет университет, кафедра и группа, если это курсовая/практика, или просто университет для ВКР
     \chead{\large 
-    Saint Petersburg State University
+    %Saint Petersburg State University
+    SAINT PETERSBURG STATE UNIVERSITY
     \vskip 1em
     \large \my@title@chair@en
   }
